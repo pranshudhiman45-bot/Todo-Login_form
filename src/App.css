@@ -1,0 +1,295 @@
+/* App.css */
+
+/* Background + Base */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f8f9ff, #e6ecff);
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 25px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.12);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* Input Box */
+.input-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.input-box input {
+  width: 65%;
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  outline: none;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.input-box input:focus {
+  border-color: #4a6cf7;
+  box-shadow: 0 0 8px rgba(74, 108, 247, 0.4);
+}
+
+.input-box button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 12px;
+  background: #4a6cf7;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.input-box button:hover {
+  background: #3451c7;
+  transform: scale(1.05);
+}
+
+/* Sections Layout */
+.section1 {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.section {
+  flex: 1;
+  min-width: 250px;
+  background: #f9faff;
+  border-radius: 15px;
+  padding: 18px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+  animation: slideUp 0.7s ease;
+}
+
+.section:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 10px 22px rgba(0, 0, 0, 0.15);
+}
+
+.section h3 {
+  text-align: center;
+  color: #4a6cf7;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+/* Task List Items */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  background: white;
+  padding: 10px 12px;
+  margin: 10px 0;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+  transition: 0.3s ease;
+  animation: popIn 0.4s ease;
+}
+
+li:hover {
+  transform: scale(1.03);
+  background: #eef3ff;
+}
+
+/* Buttons Inside Tasks */
+li button {
+  border: none;
+  border-radius: 10px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+li button:hover {
+  transform: rotate(5deg) scale(1.1);
+  opacity: 0.9;
+}
+
+/* Completed Task Style */
+.task-item.done {
+  text-decoration: line-through;
+  opacity: 0.7;
+  background: #d9ffd9;
+}
+
+/* Logout Button */
+.log-out {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.log-out button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 15px;
+  background: #ff4d4d;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.log-out button:hover {
+  background: #d93636;
+  transform: scale(1.07);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes popIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/* css for loging form  */
+/* Login Form CSS */
+
+.main {
+  width: 90%;
+  max-width: 420px;
+  margin: 80px auto;
+  padding: 30px 25px;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.9s ease-in-out;
+}
+
+.main h3 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+/* Form Layout */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Labels */
+label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #444;
+}
+
+/* Input Fields */
+input {
+  padding: 12px 15px;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  border-color: #4a6cf7;
+  box-shadow: 0 0 10px rgba(74, 108, 247, 0.35);
+  transform: scale(1.02);
+}
+
+/* Button Wrapper */
+.wrap {
+  text-align: center;
+  margin-top: 15px;
+}
+
+/* Submit Button */
+.wrap button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 15px;
+  background: linear-gradient(135deg, #4a6cf7, #3451c7);
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.wrap button:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0px 8px 18px rgba(74, 108, 247, 0.35);
+}
+
+.wrap button:active {
+  transform: scale(0.97);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
